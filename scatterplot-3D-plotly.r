@@ -1,0 +1,7 @@
+library(plotly)
+library(ggplot2)
+x <- read.csv("C:\\Home Directory\\test.txt", header=FALSE)
+dim(x)
+a <- as.matrix(x)
+df <- setNames(data.frame(a), c("x", "y", "z"))
+plot_ly(df, x = x, y = y, z = z, type = "scatter3d", mode = "markers")
